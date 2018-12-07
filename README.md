@@ -1,2 +1,0 @@
-# OOPJ
-All Lab Progs
