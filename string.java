@@ -1,41 +1,17 @@
-import java.util.Random;
+import java.util.Scanner
 
 public class string
 {
-	public static void main(String args[])
+	public static void main(String a[])
 	{
-		int i;
-		
-		Random r = new Random();
-		char c[] = new char[5];
+		System.out.println("Enter String: ");
+		Scanner sc = new Scannner(System.in);
+		String s = sc.nextLine();
 
-		for(i=0;i<5;i++)
-		{
-			c[i]=(char)(r.nextInt(26)+'A');
-		}
-	
-		for(i=0;i<5;i++)
-		{
-			switch(c[i])
-			{
-				case 'A': System.out.println("A Is Vovel...!!!");
-					break;	
+		int l = (int)s.length();
 
-				case 'E': System.out.println("E Is Vovel...!!!");
-					break;
+		String s = s.substring(1/2);
 
-				case 'I': System.out.println("I Is Vovel...!!!");
-					break;
-
-				case 'O': System.out.println("O Is Vovel...!!!");
-					break;
-
-				case 'U': System.out.println("U Is Vovel...!!!");
-					break;
-
-				default: System.out.println("String Is: "+c[i]);
-					break;
-			}
-		}
+		System.out.println("Last Half is: " "+s1+" "& Length is: " "+l+");
 	}
 }
